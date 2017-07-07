@@ -1,18 +1,17 @@
 package org.aloha.viewsource.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Created by aloha on 2017/7/4.
  */
-@RestController
+@Controller
 public class BaseController {
+
 	@RequestMapping("/")
-	@ResponseBody
-	String home() {
-		return "Hello World!";
+	public String home() {
+		return "index";
 	}
 
 }
